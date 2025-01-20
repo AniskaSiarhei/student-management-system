@@ -10,14 +10,17 @@ public class StudentDto {
     private String firstName;
     @NotEmpty(message = "Student Last Name should not be empty")
     private String lastName;
+    @NotEmpty(message = "Student Phone Number should not be empty")
+    private String phoneNumber;
     @NotEmpty(message = "Student Email should not be empty")
     @Email
     private String email;
 
-    public StudentDto(Long id, String firstName, String lastName, String email) {
+    public StudentDto(Long id, String firstName, String lastName, String phoneNumber, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
@@ -54,5 +57,13 @@ public class StudentDto {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

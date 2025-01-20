@@ -17,12 +17,16 @@ public class Student {
     private String firstName;
     private String lastName;
     @Column(nullable = false, unique = true)
+    private String phoneNumber;
+    @Column(nullable = false, unique = true)
     private String email;
 
-    public Student(Long id, String firstName, String lastName, String email) {
+
+    public Student(Long id, String firstName, String lastName, String phoneNumber, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
@@ -59,5 +63,13 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

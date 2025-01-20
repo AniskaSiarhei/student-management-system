@@ -39,6 +39,7 @@
         <tr>
             <th>Student First Name</th>
             <th>Student Last Name</th>
+            <th>Student Phone Number</th>
             <th>Student Email</th>
             <th style="width: 200px;">Actions</th>
         </tr>
@@ -48,6 +49,7 @@
         <tr th:each="student : ${students}">
             <td th:text="${student.firstName}"></td>
             <td th:text="${student.lastName}"></td>
+            <td th:text="${student.phoneNumber}"></td>
             <td th:text="${student.email}"></td>
             <td style="display: flex; justify-content: space-around;">
                 <a class="btn btn-primary btn-sm" style="font-size: 0.8rem; padding: 0.3rem 0.6rem;"  th:href="@{students/{studentId}/edit(studentId=${student.id})}">Edit</a>
