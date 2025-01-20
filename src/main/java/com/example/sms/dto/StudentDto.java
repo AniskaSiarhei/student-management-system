@@ -2,6 +2,9 @@ package com.example.sms.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
 
 public class StudentDto {
 
@@ -10,16 +13,19 @@ public class StudentDto {
     private String firstName;
     @NotEmpty(message = "Student Last Name should not be empty")
     private String lastName;
+    @DateTimeFormat(pattern = "dd.MM.yyyy")
+    private LocalDate dateOfBirth;
     @NotEmpty(message = "Student Phone Number should not be empty")
     private String phoneNumber;
     @NotEmpty(message = "Student Email should not be empty")
     @Email
     private String email;
 
-    public StudentDto(Long id, String firstName, String lastName, String phoneNumber, String email) {
+    public StudentDto(Long id, String firstName, String lastName, LocalDate dateOfBirth, String phoneNumber, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
@@ -65,5 +71,13 @@ public class StudentDto {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 }
