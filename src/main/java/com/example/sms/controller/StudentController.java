@@ -76,4 +76,11 @@ public class StudentController {
         studentService.updateStudent(studentDto);
         return "redirect:/students";
     }
+
+    // handle method to handle method del;ete student request
+    @GetMapping("students/{studentId}/delete")
+    public String deleteStudent(@PathVariable("studentId") Long studentId) {
+        studentService.deleteStudent(studentId);
+        return "redirect:/students";
+    }
 }
