@@ -2,43 +2,42 @@
 -------------------------------------------------
 # Student Management System
 
-**Student Management System** - это веб-приложение, разработанное на Java с использованием Spring Boot, Spring MVC, Thymeleaf и JPA, предоставляющее базовые возможности для управления информацией о студентах.
+The **Student Management System** is a web application developed in Java using Spring Boot, Spring MVC, Thymeleaf, and JPA. It provides basic functionalities for managing student information.
 
-## Описание
+## Description
 
-Этот проект демонстрирует основные концепции веб-разработки с использованием Spring Boot и Spring MVC, а также взаимодействие с базой данных посредством JPA. Приложение позволяет выполнять следующие операции:
+This project demonstrates core concepts of web development with Spring Boot and Spring MVC, as well as database interaction using JPA. The application allows you to perform the following operations:
 
-•   **Просмотр списка студентов:** Отображение всех студентов в табличном виде.
-•   **Создание нового студента:** Добавление нового студента в систему через веб-форму.
-•   **Редактирование существующего студента:** Изменение данных о студенте через веб-форму.
-•   **Удаление студента:** Удаление студента из системы.
-•   **Просмотр информации о студенте:** Отображение полной информации о конкретном студенте.
+•   **View Student List:** Display all students in a tabular format.
+•   **Create New Student:** Add a new student to the system through a web form.
+•   **Edit Existing Student:** Modify student data through a web form.
+•   **Delete Student:** Remove a student from the system.
+•   **View Student Information:** Display complete information about a specific student.
 
-## Технологии
+## Technologies
 
-•   **Java 17:** Основной язык программирования.
-•   **Spring Boot:** Фреймворк для быстрой разработки веб-приложений.
-•   **Spring MVC:** Модуль Spring Framework для обработки веб-запросов.
-•   **Thymeleaf:** Шаблонизатор для создания HTML-страниц.
-•   **JPA (Spring Data JPA):** Для взаимодействия с базой данных.
-•   **Hibernate:** Реализация JPA.
-•   **MySQL Database:** База данных для разработки.
-•   **Maven:** Инструмент для управления проектом и зависимостями.
-•   **Validation API:** Для валидации данных.
+•   **Java 17:** The primary programming language.
+•   **Spring Boot:** A framework for rapid development of web applications.
+•   **Spring MVC:** A Spring Framework module for handling web requests.
+•   **Thymeleaf:** A template engine for creating HTML pages.
+•   **JPA (Spring Data JPA):** For interaction with the database.
+•   **Hibernate:** A JPA implementation.
+•  **MySQL Database:** The database used for development.
+•   **Maven:** A tool for project and dependency management.
+•   **Validation API:** For data validation.
 
+## Functionality
 
-## Функциональность
-
-•   **Список студентов:**
-    •   Отображение списка студентов в табличном виде.
-    •   Предоставление ссылок для редактирования, удаления и просмотра каждого студента.
-•   **Создание студента:**
-    •   Веб-форма для ввода данных нового студента: имя, фамилия, email, номер телефона, дата рождения.
-    •   Валидация вводимых данных.
-•   **Редактирование студента:**
-    •   Веб-форма для изменения данных существующего студента.
-    •   Валидация вводимых данных.
-•   **Удаление студента:**
-    •   Удаление студента из базы данных по его ID.
-•   **Просмотр студента:**
-    •   Отображение полной информации о студенте.
+•   **Student List:**
+    •   Display a list of students in a tabular format.
+    •   Provide links to edit, delete, and view each student.
+•   **Create Student:**
+    •   A web form for inputting new student data: first name, last name, email, phone number, and date of birth.
+    •   Validation of the entered data.
+•   **Edit Student:**
+    •   A web form for modifying existing student data.
+    •   Validation of the entered data.
+•   **Delete Student:**
+    •   Delete a student from the database by their ID.
+•   **View Student:**
+    •   Display complete information about a student.
